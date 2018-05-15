@@ -14,5 +14,120 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 26px;
-  color: rgb(74, 74, 74);
+  color: #4a4a4a;
 }
+
+/* START BOOTSTRAP OVERLAPPING STYLE */
+.navbar-default {
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.1);
+  margin: 0;
+  padding: 15px 0;
+}
+
+.navbar-default .navbar-brand img {
+  height: 100%;
+}
+
+.navbar-nav {
+  position: relative;
+}
+
+.navbar-nav::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #000;
+}
+
+.form-group {
+  position: relative;
+  text-align: right;
+}
+
+.form-control {
+  border-radius: 50px;
+  transition: all .3s;
+}
+
+.form-control:focus {
+  border-color: #000;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0,0,0,.2);
+}
+
+/* END BOOTSTRAP OVERLAPPING STYLE */
+
+
+
+
+/* START CUSTOM STYLE */
+/* GENERAL STYLE */
+.h-first,
+.h-second,
+.h-third,
+.h-fourth {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.h-fourth {
+  font-size: 18px;
+}
+/*============*/
+
+.header {
+  background: url('../images/banner_1.png') no-repeat bottom right,
+              url('../images/base.png') no-repeat center center;
+  background-size: contain, cover;
+  padding: 180px 0 100px;
+}
+
+.form-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 12px;
+  line-height: 0;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.form-icon:hover {
+  color: #000;
+}
+
+
+
+.banner-h1 {
+  display: inline-block;
+  background-color: #000;
+  padding:0 40px;
+  font-size: 48px;
+  
+  color: #fff !important;
+}
+/* END CUSTOM STYLE */
