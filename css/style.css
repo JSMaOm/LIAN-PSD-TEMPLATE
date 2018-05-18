@@ -144,7 +144,41 @@ body {
 }
 
 
+.our-team .thumbnail {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
 
+.our-team .caption {
+  padding: 9px 36px;
+}
+
+.footer .nav-tabs {
+  margin: 0 0 28px;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer .nav-tabs > li {
+  display: inline-block;
+  float: none;
+}
+
+.footer .nav-tabs > li> a:link,
+.footer .nav-tabs > li> a:visited {
+  color: #a1a1a1;
+  border: none;
+  background: none;
+}
+
+.footer .nav-tabs > li> a:hover,
+.footer .nav-tabs > li> a:active {
+  border: none;
+  background: none;
+  color: #000;
+}
 /* END BOOTSTRAP OVERLAPPING STYLE */
 
 
@@ -157,18 +191,32 @@ body {
 .h-third,
 .h-fourth {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 4px;
+}
+
+.h-second {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .h-fourth {
   font-size: 18px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
 p {
+  color: #a3a3a3;
   font-size: 14px;
-  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.p-bold {
+  font-size: 16px;
+  font-weight: bold;
 }
 /*============*/
 
@@ -208,8 +256,50 @@ p {
 }
 
 .skills_title {
-  font-size: 16px;
-  font-weight: bold;
   margin-bottom: 10px;
 }
+
+.our-team {
+  padding: 0 0 80px;
+}
+
+.our-team_text {
+  display: inline-block;
+  padding-right: 250px;
+  padding-left: 250px;
+  margin-bottom: 60px;
+}
+
+.team-photo {
+  width: 360px;
+  height: 440px;
+  background: url(../images/Rectangle1.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.team-photo img {
+  height: 100%;
+}
+
+
+.footer {
+  padding: 0 0 40px;
+}
+
+.footer-logo {
+  display: inline-block;
+  height: 35px;
+  margin-bottom: 36px;
+}
+
+.copyright {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.copyright span {
+  color: #000;
+}
+
 /* END CUSTOM STYLE */
