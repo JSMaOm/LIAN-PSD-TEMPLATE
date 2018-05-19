@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
 html {
   box-sizing: border-box;
@@ -179,7 +179,68 @@ body {
   background: none;
   color: #000;
 }
+
+.gallery .btn-group {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  display: block;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.gallery .btn-group > .btn {
+  padding-right: 25px;
+  padding-left: 25px;
+  position: relative;
+  float: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #a3a3a3;
+}
+
+.gallery .btn-group > .active {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+
+.gallery .btn-group > .btn:hover,
+.gallery .btn-group > .btn:active,
+.gallery .btn-group > .btn:focus {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: #000;
+}
+
+.gallery .btn-group > .btn:not(:last-child)::before {
+  content: "/\00a0";
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  font-size: 30px;
+  font-weight: 100;
+}
 /* END BOOTSTRAP OVERLAPPING STYLE */
+
+
+
+
+
+
+/* SATART MASORY LAYOUT FOR PORFOLIO GALLERY */
+.grid-item {
+  margin-bottom: 30px;
+}
+
+/* SATART MASORY LAYOUT FOR PORFOLIO GALLERY */
+
+
+
 
 
 
@@ -218,13 +279,19 @@ p {
   font-size: 16px;
   font-weight: bold;
 }
-/*============*/
+/*====================================================================================*/
 
 .header {
   background: url('../images/banner_1.png') no-repeat bottom right,
-              url('../images/base.png') no-repeat center center;
+            #efeff1;
   background-size: contain, cover;
   padding: 180px 0 100px;
+}
+
+.porfolio-header {
+  background: url('../images/banner_2.png') no-repeat bottom right,
+              #e1e1e1;
+  background-size: 35%, cover;
 }
 
 .form-icon {
@@ -251,7 +318,8 @@ p {
   color: #fff !important;
 }
 
-.our-story {
+.our-story,
+.gallery {
   padding: 80px 0;
 }
 
@@ -282,7 +350,7 @@ p {
   height: 100%;
 }
 
-
+/* FOOTER SECTION */
 .footer {
   padding: 0 0 40px;
 }
@@ -301,5 +369,11 @@ p {
 .copyright span {
   color: #000;
 }
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+/*====================================================================================*/
 
 /* END CUSTOM STYLE */
