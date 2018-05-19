@@ -408,6 +408,23 @@ p {
   transform: scale(1);
   opacity: 1;
 }
+
+.btn-loadmroe {
+  background-color: #959595;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+}
+
+.btn-loadmroe:hover,
+.btn-loadmroe:active,
+.btn-loadmroe:focus {
+  color: #fff;
+}
 /*====================================================================================*/
 
 /* END CUSTOM STYLE */
