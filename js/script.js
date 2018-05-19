@@ -11,3 +11,9 @@ $(function () {
     });      
   }  
 });
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry'
+});
